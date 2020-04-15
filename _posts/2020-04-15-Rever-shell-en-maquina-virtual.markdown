@@ -16,7 +16,7 @@ categories: Hacking
 <br />Pero al realizar este tipo de ataques desde una maquina virtua con configuración de red NAT, la maquina virtual adquiere una dirección IP privada la cual no es visible desde la maquina victima, por lo que al configurar esta dirección como "Local host" en el exploit, no se establece la sesión debido a que no es visible para la victima.
 ### Posibles soluciones
 <br />Al tener este problema, realice una busqueda en internet para poder dar una solución a la conexión en este tipo de escenarios. Al no encontrar una solución publicada en internet, pense en el tipo de solución que yo le daría a este problema. De esta manera se me ocurrieron dos posibles soluciones:
-- Configurar un port forwarding / re-dirección de puerto local desde la máquina host a la maquina virtual.
-- Abrir un puerto de escucha desde el sistema operativo HOST Windows para recibir la sesión remota.
+<br /> - Configurar un port forwarding / re-dirección de puerto local desde la máquina host a la maquina virtual.
+ - Abrir un puerto de escucha desde el sistema operativo HOST Windows para recibir la sesión remota.
 <br />Para hacer un port forwarding que reciba la sesión y la envie a la máquina virtual requiere realizar la configuración en el sistema operativo host y poner el puerto en escucha en la máquina virtual para recibir la sesión desde el sistema operativo HOST. Sin embargo, se requieren menos configuraciones al simplemente poner a escuchar el puerto en la máquina host, por lo que opté por esta última dado que me pareció mas practica.
  
