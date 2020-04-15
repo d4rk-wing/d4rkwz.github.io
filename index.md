@@ -4,6 +4,10 @@ layout: home
 permalink: /
 ---
 
-# Welcome
+# Welcome / Bienvenidos
 
-Bienvenidos al blog de D4rk wing. En este blog encontraran tips y herramientas que he ido adquiriendo durante mi experiencia como consultor de ethical hacking.
+
+Bienvenidos al blog de D4rk wing, en este blog podran encontrar consejos, herramientas, técnicas entre otras utilidades que he ido adquiriendo durante mi experiencia como consultor de ethical hacking.
+
+
+Welcome to the D4rk wing blog, in this blog you can find tips, tools, techniques, among other utilities that I have been acquiring during my experience as an ethical hacking consultant.
