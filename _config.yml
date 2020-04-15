@@ -2,11 +2,11 @@
 
 #google_analytics: UA-NNNNNNNN-N
 
-#header_pages:
-#  - index.md
-#  - about.md
+header_pages:
+  - index.md
+  - about.md
 
-#footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
+footer: 'Follow on: Twitter <a href="https://twitter.com/d4rk_wing" target="_blank"><img src="/images/twitter.png" alt="" width="20" height="20" /></a>'
 
 #style: light # dark (default) or light
 #listen_for_clients_preferred_style: true # true or false (default)
