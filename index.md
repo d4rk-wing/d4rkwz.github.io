@@ -1,5 +1,5 @@
 ---
-title: /
+title: D4rk Wing Blog
 layout: home
 permalink: /
 ---
