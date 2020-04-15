@@ -1,8 +1,6 @@
 # D4rk Wing Blog
 
-A jekyll theme with inspiration from linux consoles for hackers, developers and script kiddies.
-
-<img src="https://raw.githubusercontent.com/b2a3e8/jekyll-theme-console/master/screenrec-dark.gif" width="550" title="Screenshot">
+Blog personal de D4rk Wing
 
 ## License
 
