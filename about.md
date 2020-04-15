@@ -9,3 +9,10 @@ Mi nombre es Darwin Zea, soy consultor de seguridad informática con certificaci
 Me he desempeñado en cargos de seguridad informática desde el año 2014, con experiencia en pruebas de ethical hacking, aseguramiento de aplicaciones y plataformas tecnológicas, analisis de vulnerabilidades y arquitectura de seguridad.
 
 ## Who am i?
+
+
+### contact me
+
+LikedIn: [Darwin Zea](https://www.linkedin.com/in/darwin-samir-zea-avellaneda-3b9385159)
+Email: dszea03@gmail.com
+
