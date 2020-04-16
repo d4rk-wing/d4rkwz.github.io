@@ -35,14 +35,14 @@ Para este escenario se tienen las siguientes maquinas:
 		Dirección IP:
 
 <br />Se virtualizan las dos maquinas en diferentes software de virtualización con el fin de garantizar que no haya visibilidad al atacante desde la máquina victima.
-### Ejecución del ataque 
+### Ejecución del ataque
+<br />
 ___NOTA: En este post únicamente se explica como establecer la sesión remota en el sistema operativo host, por lo que no se detallan las configuraciones del exploit Eternalblue, este ataque se encuentra documentado en varios sitios de internet.___
 <br />
 1. Configurar puerto en escucha en Windows 10: *nc.exe -lvp [PUERTO]*
-<br />
 2. Configurar IP victima en opción RHOST
 3. En la opción LHOST se configura la dirección IP del sistema operativo anfitrion (Windows 10) y en LPORT el puerto anteriormente configurado.
-4. Ejecutar el exploit (run o exploit)
+4. Ejecutar el exploit (run o exploit)  
 <br />
 Como se puede observar se recibe correctamente la sesión en el sistema operativo HOST.  
 ### Conclusiones
