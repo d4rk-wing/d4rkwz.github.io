@@ -13,6 +13,6 @@ Me he desempeñado en cargos de seguridad informática desde el año 2014, con e
 
 ### contact me
 
-LikedIn: [Darwin Zea](https://www.linkedin.com/in/darwin-samir-zea-avellaneda-3b9385159)
+LikedIn: [Darwin Zea](https://www.linkedin.com/in/darwin-samir-zea-avellaneda-3b9385159){:target="_blank"}
 Email: dszea03@gmail.com
 
