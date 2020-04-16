@@ -36,17 +36,14 @@ Para este escenario se tienen las siguientes maquinas:
 
 <br />Se virtualizan las dos maquinas en diferentes software de virtualización con el fin de garantizar que no haya visibilidad al atacante desde la máquina victima.
 ### Ejecución del ataque
-<br />
-___NOTA: En este post únicamente se explica como establecer la sesión remota en el sistema operativo host, por lo que no se detallan las configuraciones del exploit Eternalblue, este ataque se encuentra documentado en varios sitios de internet.___
+<br />___NOTA: En este post únicamente se explica como establecer la sesión remota en el sistema operativo host, por lo que no se detallan las configuraciones del exploit Eternalblue, este ataque se encuentra documentado en varios sitios de internet.___
 <br />
 1. Configurar puerto en escucha en Windows 10: *nc.exe -lvp [PUERTO]*
 2. Configurar IP victima en opción RHOST
 3. En la opción LHOST se configura la dirección IP del sistema operativo anfitrion (Windows 10) y en LPORT el puerto anteriormente configurado.
 4. Ejecutar el exploit (run o exploit)  
 
-Como se puede observar se recibe correctamente la sesión en el sistema operativo HOST.  
+<br />Como se puede observar se recibe correctamente la sesión en el sistema operativo HOST.  
 ### Conclusiones
-
-Se ha podido establecer correctamente la sesión de una ataque de tipo shell reversa realizado desde una máquina virtual la cual no es visible desde la victima. Este metodo únicamente requiere la ejecución de Netcat para Windows y la desactivación de firewall en el sistema operativo, de esta manera se puede recibir la sesión remota en cualquier ataque de este tipo.
-<br />
-Si bien al principio del post indique que no encontré ninguna publicación en internet que explicará este proceso, también es cierto que es un proceso simple que seguramente es usado por muchos profesionales que acostumbran realizar este tipo de pruebas desde una máquina virtual. Sin embargo, no esta documentado para quienes esten iniciando en el mundo de las pruebas de ethical hacking
+<br />Se ha podido establecer correctamente la sesión de una ataque de tipo shell reversa realizado desde una máquina virtual la cual no es visible desde la victima. Este metodo únicamente requiere la ejecución de Netcat para Windows y la desactivación de firewall en el sistema operativo, de esta manera se puede recibir la sesión remota en cualquier ataque de este tipo.
+<br />Si bien al principio del post indique que no encontré ninguna publicación en internet que explicará este proceso, también es cierto que es un proceso simple que seguramente es usado por muchos profesionales que acostumbran realizar este tipo de pruebas desde una máquina virtual. Sin embargo, no esta documentado para quienes esten iniciando en el mundo de las pruebas de ethical hacking
