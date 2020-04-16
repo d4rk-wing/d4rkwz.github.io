@@ -23,20 +23,26 @@ categories: Hacking
 ### Configuraciones previas a la explotación
 <br />Para poder recibir la sesión remota, es importante que la victima tenga visibilidad del equipo desde el cual se realiza el ataque, por lo que se debe desactivar temporalmente el firewall de Windows y del Software antivirus (en caso de tener instalado) con el fin de garantizar la visibilidad.
 <br />Adicionalmente, para recibir la sesión se debe hacer uso de un software que permita esta acción. En mi caso utilice Netcat para Windows el cual descargue del este [sitio](https://eternallybored.org/misc/netcat/){:target="_blank"}, aunque existen varios otros sitios e incluso repositorios de GitHub en los cuales puede encontrarse.
-<br />Para este ejemplo, explotaremos la famosa vulnerabilidad de Eternalblue, también conocida por el boletín de seguridad correspondiente de Microsoft MS17-010 la cual fue utilizada en el ataque de ransomware WannaCry.
+<br />Para este ejemplo, explotaremos la famosa vulnerabilidad de Eternalblue a través de Metasploit, también conocida por el boletín de seguridad correspondiente de Microsoft MS17-010 la cual fue utilizada en el ataque de ransomware WannaCry.
 Para este escenario se tienen las siguientes maquinas:
-1. Windows 10: Sistema operativo Host
+1. Windows 10: Sistema operativo Host  
 		Dirección IP:
-2. Windows 7: Maquina vitual en Virtual Box - Victima
+2. Windows 7: Maquina vitual en Virtual Box - Victima  
 		Configuracion de red NAT/direccionamiento de la red local.
 		Dirección IP:
-3. Kali Linux: Maquina virtual en VMware - Atacante
+3. Kali Linux: Maquina virtual en VMware - Atacante  
 		Configuración de red en modo puente o Bridge/Visible desde el sistema operativo host.
 		Dirección IP:
+
 <br />Se virtualizan las dos maquinas en diferentes software de virtualización con el fin de garantizar que no haya visibilidad del atacante desde la máquina victima.
 ### Ejecución del ataque 
 *** NOTA: En este post únicamente se explicara como establecer la sesión remota en el sistema operativo host, por lo que no se detallan las configuraciones del exploit Eternalblue, este ataque se encuentra documentado en varios sitios de internet. ***
-<br />Para poner el puerto en escucha se mantiene la sintaxis de netcat:
-	*nc.exe -lvp [PUERTO]*
 <br />
+1. Configurar IP victima en opción RHOST
+
+2. Configurar puerto en escucha en Windows 10: *nc.exe -lvp [PUERTO]*
+
+3. En la opción LHOST se configura la dirección IP del sistema operativo anfitrion (Windows 10) y en LPORT el puerto anteriormente configurado.
+
+4. Ejecutar el exploit (run o exploit)
 ### Conclusiones
