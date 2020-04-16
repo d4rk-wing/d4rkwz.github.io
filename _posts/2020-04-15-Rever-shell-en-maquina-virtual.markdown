@@ -15,7 +15,7 @@ categories: Hacking
 <br />Retomando los ataques de sesión remota, al ejecutar el exploit (manual o automático) normalmente se recibe la sesión en el sistema operativo desde el cual se realiza la explotación. Por ejemplo desde Metasploit Framework, al ejecutar este tipo de ataques se establece una sesión de meterpreter o una reverse_tcp configurando la IP de la maquina atacante en la opción LHOST y especificando el puerto en LPORT. Lo anterior configura automáticamente el puerto en escucha para establecer la sesión.
 <br />Pero al realizar este tipo de ataques desde una maquina virtua con configuración de red NAT, la maquina virtual adquiere una dirección IP privada la cual no es visible desde la maquina victima, por lo que al configurar esta dirección como "Local host" en el exploit, no se establece la sesión debido a que no es visible para la victima.
 
-<img src="/images/post/Rever-shell-en-maquina-virtual/fail_exploit.png" width="90%" height="90%" />
+<img src="/images/post/Rever-shell-en-maquina-virtual/fail_exploit.png" width="100%" height="100%" />
 
 ## Posibles soluciones
 <br />Al tener este problema, realice una busqueda en internet para poder dar una solución a la conexión en este tipo de escenarios. Al no encontrar una solución publicada en internet, pense en el tipo de solución que yo le daría a este problema. De esta manera se me ocurrieron dos posibles soluciones:
@@ -35,7 +35,7 @@ Para este escenario se tienen las siguientes maquinas:
 2. Windows 7: Maquina vitual en Virtual Box - Victima  
 		Configuracion de red NAT/direccionamiento de la red local.  
 		Dirección IP: 192.168.0.9  
-		<img src="/images/post/Rever-shell-en-maquina-virtual/ipconfig_victima.png.png" width="90%" height="90%" />
+		<img src="/images/post/Rever-shell-en-maquina-virtual/ipconfig_victima.png" width="90%" height="90%" />
 3. Kali Linux: Maquina virtual en VMware - Atacante  
 		Configuración de red en Bridge/Visible desde el sistema operativo host.  
 		Dirección IP: 192.168.17.129
