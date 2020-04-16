@@ -23,7 +23,7 @@ categories: Hacking
 ### Configuraciones previas a la explotación
 <br />Para poder recibir la sesión remota, es importante que la victima tenga visibilidad del equipo desde el cual se realiza el ataque, por lo que se debe desactivar temporalmente el firewall de Windows y del Software antivirus (en caso de tener instalado) con el fin de garantizar la visibilidad.
 
-<br />Adicionalmente, para recibir la sesión se debe hacer uso de un software que permita esta acción. En mi caso utilice Netcat para Windows el cual descargue del este [sitio](https://eternallybored.org/misc/netcat/), aunque existen varios otros sitios e incluso repositorios de GitHub en los cuales puede encontrarse.
+<br />Adicionalmente, para recibir la sesión se debe hacer uso de un software que permita esta acción. En mi caso utilice Netcat para Windows el cual descargue del este [sitio](https://eternallybored.org/misc/netcat/){:target="_blank"}, aunque existen varios otros sitios e incluso repositorios de GitHub en los cuales puede encontrarse.
 
 <br />Para poner el puerto en escucha se mantiene la sintaxis de netcat:
 	*nc.exe -lvp [PUERTO]*
