@@ -27,5 +27,8 @@ categories: Hacking
 	*nc.exe -lvp [PUERTO]*
 ### Ejecución del ataque 
 <br />Para este ejemplo, explotaremos la famosa vulnerabilidad de Eternalblue, también conocida por el boletín de seguridad correspondiente de Microsoft MS17-010 la cual fue utilizada en el ataque de ransomware WannaCry.
-
+Para este escenario se tienen las siguientes maquinas:
+1. Windows 10: Sistema operativo Host
+2. Windows 7: Maquina vitual - Victima
+3. Kali Linux: Maquina atacante - Atacante
 ### Conclusiones
