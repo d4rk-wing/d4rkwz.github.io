@@ -14,6 +14,9 @@ categories: Hacking
 <br />Sin embargo, en la mayoria de las compañias, se tiene direccionamiento IP Statico o reserva DCHP desde la MAC del equipo, y adicionalmente solo proporcionan una dirección IP desde la cual se ejecutan las pruebas de seguridad. Personalmente recomiendo tener el equipo con dual boot, para poder realizar las pruebas de seguridad directamente desde un sistema operativo Linux, aunque esto en algunas ocasiones no puede realizarse por limitaciones propias del cliente, en las cuales únicamente permite realizar conexiones desde sistemas operativos Windows a tavés de NAC u otros controles de seguridad.
 <br />Retomando los ataques de sesión remota, al ejecutar el exploit (manual o automático) normalmente se recibe la sesión en el sistema operativo desde el cual se realiza la explotación. Por ejemplo desde Metasploit Framework, al ejecutar este tipo de ataques se establece una sesión de meterpreter o una reverse_tcp configurando la IP de la maquina atacante en la opción LHOST y especificando el puerto en LPORT. Lo anterior configura automáticamente el puerto en escucha para establecer la sesión.
 <br />Pero al realizar este tipo de ataques desde una maquina virtua con configuración de red NAT, la maquina virtual adquiere una dirección IP privada la cual no es visible desde la maquina victima, por lo que al configurar esta dirección como "Local host" en el exploit, no se establece la sesión debido a que no es visible para la victima.
+
+![fail attack](/images/post/Rever-shell-en-maquina-virtual/fail_exploit.png)
+
 ## Posibles soluciones
 <br />Al tener este problema, realice una busqueda en internet para poder dar una solución a la conexión en este tipo de escenarios. Al no encontrar una solución publicada en internet, pense en el tipo de solución que yo le daría a este problema. De esta manera se me ocurrieron dos posibles soluciones:
 <br />
@@ -26,13 +29,13 @@ categories: Hacking
 <br />Para este ejemplo, explotaremos la famosa vulnerabilidad de Eternalblue a través de Metasploit, también conocida por el boletín de seguridad correspondiente de Microsoft MS17-010 la cual fue utilizada en el ataque de ransomware WannaCry.
 Para este escenario se tienen las siguientes maquinas:
 1. Windows 10: Sistema operativo Host  
-		Dirección IP:
+		Dirección IP: 192.168.0.7  
 2. Windows 7: Maquina vitual en Virtual Box - Victima  
 		Configuracion de red NAT/direccionamiento de la red local.  
-		Dirección IP:
+		Dirección IP: 192.168.0.9  
 3. Kali Linux: Maquina virtual en VMware - Atacante  
 		Configuración de red en Bridge/Visible desde el sistema operativo host.  
-		Dirección IP:
+		Dirección IP: 192.168.17.129
 
 <br />Se virtualizan las dos maquinas en diferentes software de virtualización con el fin de garantizar que no haya visibilidad al atacante desde la máquina victima.
 ### Ejecución del ataque
