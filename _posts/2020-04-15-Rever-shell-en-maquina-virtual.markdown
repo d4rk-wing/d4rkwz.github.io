@@ -26,13 +26,13 @@ categories: Hacking
 <br />Para este ejemplo, explotaremos la famosa vulnerabilidad de Eternalblue, también conocida por el boletín de seguridad correspondiente de Microsoft MS17-010 la cual fue utilizada en el ataque de ransomware WannaCry.
 Para este escenario se tienen las siguientes maquinas:
 1. Windows 10: Sistema operativo Host
-	1. Dirección IP:
+	* Dirección IP:
 2. Windows 7: Maquina vitual en Virtual Box - Victima
-	1. Configuracion de red NAT con el fin de tomar direccionamiento de la red local.
-	2. Dirección IP:
+	* Configuracion de red NAT con el fin de tomar direccionamiento de la red local.
+	* Dirección IP:
 3. Kali Linux: Maquina virtual en VMware - Atacante
-	1. Configuración de red en modo puente/Bridge, garantizando que solo pueda ser vista desde el sistema operativo host.
-	2. Dirección IP:
+	* Configuración de red en modo puente/Bridge, garantizando que solo pueda ser vista desde el sistema operativo host.
+	* Dirección IP:
 <br />Se virtualizan las dos maquinas en diferentes software de virtualización con el fin de garantizar que no haya visibilidad del atacante desde la máquina victima.
 ### Ejecución del ataque 
 *** NOTA: En este post únicamente se explicara como establecer la sesión remota en el sistema operativo host, por lo que no se detallan las configuraciones del exploit Eternalblue, este ataque se encuentra documentado en varios sitios de internet. ***
