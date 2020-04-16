@@ -30,13 +30,15 @@ categories: Hacking
 Para este escenario se tienen las siguientes maquinas:
 1. Windows 10: Sistema operativo Host  
 		Dirección IP: 192.168.0.7  
+		
 2. Windows 7: Maquina vitual en Virtual Box - Victima  
 		Configuracion de red NAT/direccionamiento de la red local.  
 		Dirección IP: 192.168.0.9  
+		
 3. Kali Linux: Maquina virtual en VMware - Atacante  
 		Configuración de red en Bridge/Visible desde el sistema operativo host.  
 		Dirección IP: 192.168.17.129
-
+		
 <br />Se virtualizan las dos maquinas en diferentes software de virtualización con el fin de garantizar que no haya visibilidad al atacante desde la máquina victima.
 ### Ejecución del ataque
 <br />___NOTA: En este post únicamente se explica como establecer la sesión remota en el sistema operativo host, por lo que no se detallan las configuraciones del exploit Eternalblue, este ataque se encuentra documentado en varios sitios de internet.___
