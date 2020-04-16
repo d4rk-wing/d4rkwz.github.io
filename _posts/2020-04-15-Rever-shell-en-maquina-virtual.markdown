@@ -43,7 +43,7 @@ ___NOTA: En este post únicamente se explica como establecer la sesión remota e
 2. Configurar IP victima en opción RHOST
 3. En la opción LHOST se configura la dirección IP del sistema operativo anfitrion (Windows 10) y en LPORT el puerto anteriormente configurado.
 4. Ejecutar el exploit (run o exploit)  
-<br />
+<br />  
 Como se puede observar se recibe correctamente la sesión en el sistema operativo HOST.  
 ### Conclusiones
 <br />
