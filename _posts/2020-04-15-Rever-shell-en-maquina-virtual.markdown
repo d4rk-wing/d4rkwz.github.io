@@ -25,6 +25,7 @@ categories: Hacking
 <br />Adicionalmente, para recibir la sesión se debe hacer uso de un software que permita esta acción. En mi caso utilice Netcat para Windows el cual descargue del este [sitio](https://eternallybored.org/misc/netcat/), aunque existen varios otros sitios e incluso repositorios de GitHub en los cuales puede encontrarse.
 
 <br />Para poner el puerto en escucha se mantiene la sintaxis de netcat:
+	::bat - Fichero Batch DOS/Windows
 	nc.exe -lvp [PUERTO]
 ### Ejecución del ataque 
 
