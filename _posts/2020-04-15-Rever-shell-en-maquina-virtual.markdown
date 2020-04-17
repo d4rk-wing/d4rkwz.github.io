@@ -52,7 +52,7 @@ Para este escenario se tienen las siguientes máquinas:
 <img src="/images/post/Reverse-shell-en-maquina-virtual/eternal_config.png" width="100%" height="100%" />
 <br />Como se puede observar se recibe correctamente la sesión en el sistema operativo HOST.  
 <br /><img src="/images/post/Reverse-shell-en-maquina-virtual/ok_exploit.png" width="100%" height="100%" />
-<img src="/images/post/Reverse-shell-en-maquina-virtual/Shell_reverse.png" width="100%" height="100%" />
+<img src="/images/post/Reverse-shell-en-maquina-virtual/shell_reverse.png" width="100%" height="100%" />
 ### Conclusiones
 <br />Se ha podido establecer correctamente la sesión de un ataque de tipo Shell reversa realizado desde una máquina vírtual la cual no es visible desde la victima. Este método únicamente requiere la ejecución de Netcat para Windows y la desactivación de firewall en el sistema operativo, de esta manera se puede recibir la sesión remota en cualquier ataque de este tipo.
 <br />Si bien al principio del post indiqué que no encontré ninguna publicación en internet que explicará este proceso, también es cierto que es un proceso simple que seguramente es usado por muchos profesionales que acostumbran realizar este tipo de pruebas desde una máquina vírtual. Sin embargo, no esta documentada para quienes estén iniciando en el mundo de las pruebas de ethical hacking
