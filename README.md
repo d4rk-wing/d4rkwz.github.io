@@ -1,6 +1,6 @@
-# D4rk Wing Blog
+# D4rkwz Blog
 
-Blog personal de D4rk Wing
+Blog personal de D4rkwz
 
 ## License
 
